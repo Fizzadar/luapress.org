@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?=self:get('page').title ?></title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="static blog, static website, lua static website" />
+    <meta name="description" content="Luapress is a simple and fast static site/blog generator written in Lua." />
+
+    <link rel="shortcut icon" href="" />
+    <link rel="icon" href="" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
+    <link href="<?=self:get('url') ?>/inc/template/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav id="floating">
+        Contents
+        <a href="#">Introduction</a>
+        <a href="#MarkdownExtras">Markdown Extras</a>
+        <a href="#ConfigOptions">Config Options</a>
+        <a href="#Templates">Templates</a>
+        <a href="#Plugins">Plugins</a>
+    </nav>
+
+    <section id="content">
+        <nav id="inner">
+            View on <a href="https://github.com/Fizzadar/Luapress">GitHub</a>
+        </nav>
+
+        <h1>
+            <a href="#"><?=self:get('page').title ?></a>
+            <span>v3</span>
+        </h1>

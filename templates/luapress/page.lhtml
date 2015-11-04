@@ -1,0 +1,2 @@
+
+<?=self:get('page').content ?>
