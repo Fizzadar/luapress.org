@@ -36,10 +36,37 @@ $/raw$
 
 Modify the auto-generated `config.lua` to customise the Luapress output:
 
-+ Set `link_dirs = false` to have posts & pages generated at `/name.html` rather than `/name/index.html`
-+ Set `config.posts_dir` and `config.pages_dir` to change the output directories for posts & pages
-+ The `inc/` directory will be copied to `build/inc/`, and your template inc to `build/inc/template`
-+ Add `--nocache` before the URL to ignore caching (for template dev)
++ `config.title` to change the site title
++ `config.template` to use a custom template
++ `config.posts_dir` and `config.pages_dir` change the output dirs
++ `config.index_page` to use a page as index
++ `config.sticky_page` to stick a pages contents on top of the first index
++ `link_dirs = false` build post/pages at `/name.html` rather than `/name/index.html`
+
+All the available options and defaults can be viewed in [the default config](https://github.com/Fizzadar/Luapress/blob/develop/luapress/default_config.lua).
+
+
+## Environments
+
+Multiple environments can be defined in the config file:
+
+    config = {
+        url = 'http://localhost/mysite',
+        envs = {
+            production = {
+                url = 'http://mysite.com',
+                build_dir = 'production'
+            }
+        }
+    }
+
+To build against envs:
+
+    # Builds default (localhost/mysite) to ./build (the default)
+    $ luapress
+
+    # Builds production (mysite.com) to ./production
+    $ luapress production
 
 
 ## Templates
@@ -55,7 +82,7 @@ Writing out variables in the templates is simple:
 
     <h1><?=self:get('page').title ?></h1>
 
-Check out the [included template]() and [this website]() serve as good references for building templates.
+Check out the [included template](https://github.com/Fizzadar/Luapress/tree/develop/template) and [this website](https://github.com/Fizzadar/luapress.org) serve as good references for building templates.
 
 
 ## Plugins
@@ -67,3 +94,5 @@ $raw$
     $! MY_PLGUIN arg, arg, arg !$
 
 $/raw$
+
+To use plugins not included with Luapress, just drop them in `plugins/` alongside your `posts/` and `pages/`. Plugins must contain an `init.lua` file which returns a single function. Check out the [gallery plugin](https://github.com/Fizzadar/Luapress/tree/develop/plugins/gallery) as a good reference for building plugins.
