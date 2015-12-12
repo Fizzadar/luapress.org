@@ -71,18 +71,14 @@ To build against envs:
 
 ## Templates
 
-Luapress templates are written in `lhtml`, a simple extension of HTML, and you only need to worry about a few files:
+Luapress templates use [mustache](https://mustache.github.io/), but also offer legacy support for LHTML. You only need to worry about a few files:
 
-+ `header.lhtml`
-+ `footer.lhtml`
-+ One or both of `post.lhtml` & `page.lhtml`
-+ Optionally an `archive.lhtml`
++ `header.mustache`
++ `footer.mustache`
++ One or both of `post.mustache` & `page.mustache`
++ Optionally an `archive.mustache`
 
-Writing out variables in the templates is simple:
-
-    <h1><?=self:get('page').title ?></h1>
-
-Check out the [included template](https://github.com/Fizzadar/Luapress/tree/develop/template) and [this website](https://github.com/Fizzadar/luapress.org) serve as good references for building templates.
+The [included templates](https://github.com/Fizzadar/Luapress/tree/develop/template) and [this website](https://github.com/Fizzadar/luapress.org) serve as good references for building templates.
 
 
 ## Plugins
