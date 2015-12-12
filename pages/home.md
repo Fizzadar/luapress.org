@@ -78,7 +78,7 @@ Luapress templates use [mustache](https://mustache.github.io/), but also offer l
 + One or both of `post.mustache` & `page.mustache`
 + Optionally an `archive.mustache`
 
-The [included templates](https://github.com/Fizzadar/Luapress/tree/develop/template) and [this website](https://github.com/Fizzadar/luapress.org) serve as good references for building templates.
+The [included templates](https://github.com/Fizzadar/Luapress/tree/develop/template) and [this website](https://github.com/Fizzadar/luapress.org/tree/develop/templates/luapress) serve as good references for building templates.
 
 
 ## Plugins
