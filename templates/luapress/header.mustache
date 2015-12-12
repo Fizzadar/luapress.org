@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?=self:get('page').title ?></title>
+    <title>{{page.title}}</title>
     <meta charset="UTF-8" />
     <meta name="keywords" content="static blog, static website, lua static website" />
     <meta name="description" content="Luapress is a simple and fast static site/blog generator written in Lua." />
@@ -10,7 +10,7 @@
     <link rel="icon" href="" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
-    <link href="<?=self:get('url') ?>inc/template/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{{url}}}inc/template/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <nav id="floating">
@@ -29,6 +29,6 @@
         </nav>
 
         <h1>
-            <a href="<?=self:get('url') ?>"><?=self:get('page').title ?></a>
-            <span>v3</span>
+            <a href="{{{url}}}">{{page.title}}</a>
+            <span>v3.1</span>
         </h1>
