@@ -97,6 +97,17 @@ nav#floating {
     nav#floating a:hover {
         color: #1A1B1B;
     }
+    nav#floating > li {
+        list-style: square;
+        margin-left: 20px;
+    }
+    nav#floating > ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav#floating > ul > li {
+        list-style: none;
+    }
 
 section#content {
     width: 560px;
