@@ -74,7 +74,7 @@ To build against envs:
 
 ## Templates
 
-Luapress templates can be written [mustache](https://mustache.github.io/), [etlua](???) or LHTML. You only need to worry about a few files:
+Luapress templates can be written [mustache](https://mustache.github.io/), [etlua](https://github.com/leafo/etlua) or LHTML. You only need to worry about a few files:
 
 + `header.[mustache|etlua|lhtml]`
 + `footer.[mustache|etlua|lhtml]`
