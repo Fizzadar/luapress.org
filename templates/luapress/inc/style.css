@@ -99,7 +99,9 @@ nav#floating {
     }
     nav#floating > li {
         list-style: square;
-        margin-left: 20px;
+    }
+    nav#floating > li a {
+        display: inline;
     }
     nav#floating > ul {
         margin: 0;
