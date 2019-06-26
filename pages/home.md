@@ -30,6 +30,7 @@ $raw$
     + Or `$date=day/month/year` (overrides above)
     + `$order=number` sets the order pages appear in the menu
     + `$hidden=true` hides pages from the menu
++ To ignore all these extras wrap content in <code>&dollar;raw&dollar;</code> ... <code>&dollar;/raw&dollar;</code>
 
 $/raw$
 
