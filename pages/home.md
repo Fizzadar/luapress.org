@@ -90,7 +90,7 @@ Plugins can be used like so:
 
 $raw$
 
-    $! MY_PLGUIN arg, arg, arg !$
+    $! MY_PLUGIN arg, arg, arg !$
 
 $/raw$
 
