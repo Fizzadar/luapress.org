@@ -4,15 +4,9 @@
 -- github.com/Fizzadar/Luapress/blob/develop/luapress/default_config.lua
 
 local config = {
-    url = 'http://luapress.org/',
+    url = '/',
     template = 'luapress',
     index_page = 'home',
-
-    envs = {
-        dev = {
-            url = '/'
-        }
-    }
 }
 
 return config
