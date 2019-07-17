@@ -1,4 +1,5 @@
 .DS_Store
 .luapress
 build/
+production/
 templates/default/
